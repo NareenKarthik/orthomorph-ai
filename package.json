@@ -9,7 +9,8 @@
     "client": "node ./node_modules/vite/bin/vite.js",
     "start": "node server/server.js",
     "build": "node ./node_modules/vite/bin/vite.js build",
-    "preview": "node ./node_modules/vite/bin/vite.js preview"
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "deploy": "node ./node_modules/vite/bin/vite.js build && npx wrangler pages deploy dist --project-name orthomorph-ai"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

@@ -445,7 +445,7 @@ export default function LoginPage() {
             animation: 'pulse 2s infinite',
           }} />
           <span style={{ color: dbStatus?.isConnected ? '#10b981' : '#f59e0b', fontWeight: 600 }}>
-            {dbStatus?.isConnected ? 'MongoDB Database Online' : 'Connecting to Database...'}
+            {dbStatus?.isConnected ? dbStatus.mode : 'Database Offline'}
           </span>
           <span style={{ color: 'var(--text-muted)' }}>|</span>
           <span style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
